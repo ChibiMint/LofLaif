@@ -20,7 +20,7 @@ function cleanUrl(valor?: string): string {
 }
 
 
-function ChapterCard({
+function CartaCapitulo({
   capitulo,
   objetoId,
 }: {
@@ -33,7 +33,7 @@ function ChapterCard({
     <Link
       to={
         `/multimedia/objeto/${encodeURIComponent(objetoId)}` +
-        `/cap/${encodeURIComponent(capitulo.Capitulo)}`
+        `/cap/${encodeURIComponent(capitulo.Capitulo || capitulo.Edicion || '')}`
       }
       className="detalle-objeto__capitulo"
     >
@@ -293,7 +293,7 @@ export default function ItemDetail() {
 
                 {capitulos.map((capitulo) => (
 
-                  <ChapterCard
+                  <CartaCapitulo
                     key={`${capitulo.Capitulo}-${capitulo.Nombre}`}
                     capitulo={capitulo}
                     objetoId={objeto.id}

@@ -1,0 +1,19 @@
+{
+    "sections":[
+        {
+            "Nombre": "HISTORY OF LoveLive!",
+            "Imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBOT3mSNN3zt3RdCCMehZ9-Bxlfa5sDGKI8tlrasA17-xGz38kzX7Qm1-7&s=10",
+            "Fecha": "2015-07-1"
+        },
+        {
+            "Nombre": "Love Live! Days",
+            "Imagen":"https://s.pacn.ws/1/p/175/dengeki-gs-magazine-december-2023-issue-lovelive-days-776819.2.jpg?v=s36fj8",
+            "Fecha": "2019-07-1"
+        },
+        {
+            "Nombre": "Dengeki Gs Magazine",
+            "Imagen":"https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.59b1c555101d8_DengekiGsMagazineIssue188March2013.jpg.6dace599c2f1a94901af809d37dd6177.jpg",
+            "Fecha": "2021-01-15"
+        }
+    ]
+}

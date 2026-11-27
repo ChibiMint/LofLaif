@@ -3,6 +3,7 @@ import Canciones from './DatosM/canciones.json'
 import Album from './DatosM/album.json'
 import conciertos from './DatosM/conciertos.json'
 import libros from './DatosM/libros.json'
+import revistas from './DatosM/revistas.json'
 
 export type Kind =
   | 'anime'
@@ -10,19 +11,20 @@ export type Kind =
   | 'album'
   | 'conciertos'
   | 'libros'
+  | 'revistas'
 
 export type Objeto = {
   id: string
   kind: Kind
   nombre: string
-  grupo: string
+  grupo?: string
   imagen?: string
   fecha?: string
 }
 
 type SectionData = {
   Nombre: string
-  Grupo: string
+  Grupo?: string
   Imagen?: string
   Fecha?: string
 }
@@ -52,6 +54,7 @@ function mostrarTodo(): Objeto[] {
   añadirSeccion(Album.sections, 'album', 'album')
   añadirSeccion(conciertos.sections, 'conciertos', 'conciertos')
   añadirSeccion(libros.sections, 'libros', 'libros')
+  añadirSeccion(revistas.sections, 'revistas', 'revistas')
 
   return objetos
 }

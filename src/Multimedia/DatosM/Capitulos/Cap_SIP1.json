@@ -20,51 +20,63 @@
     },
     {
       "Capitulo": "3",
-      "Nombre": "Primer concierto"
+      "Nombre": "Primer concierto",
+      "Fecha": "2013-01-20"
     },
     {
       "Capitulo": "4",
-      "Nombre": "MakiRinPana"
+      "Nombre": "MakiRinPana",
+      "Fecha": "2013-01-27"
     },
     {
       "Capitulo": "5",
-      "Nombre": "Nico ataca"
+      "Nombre": "Nico ataca",
+      "Fecha": "2013-02-03"
     },
     {
       "Capitulo": "6",
-      "Nombre": "¿Quién va a ser el centro?"
+      "Nombre": "¿Quién va a ser el centro?",
+      "Fecha": "2013-02-10"
     },
     {
       "Capitulo": "7",
-      "Nombre": "Elichika"
+      "Nombre": "Elichika",
+      "Fecha": "2013-02-17"
     },
     {
       "Capitulo": "8",
-      "Nombre": "Lo que queremos hacer es..."
+      "Nombre": "Lo que queremos hacer es...",
+      "Fecha": "2013-02-24"
     },
     {
       "Capitulo": "9",
-      "Nombre": "Wonder Zone"
+      "Nombre": "Wonder Zone",
+      "Fecha": "2013-03-03"
     },
     {
       "Capitulo": "10",
-      "Nombre": "Prohibido decir 'senpai'"
+      "Nombre": "Prohibido decir 'senpai'",
+      "Fecha": "2013-03-10"
     },
     {
       "Capitulo": "11",
-      "Nombre": "El concierto más grande"
+      "Nombre": "El concierto más grande",
+      "Fecha": "2013-03-17"
     },
     {
       "Capitulo": "12",
-      "Nombre": "Amigas"
+      "Nombre": "Amigas",
+      "Fecha": "2013-03-24"
     },
     {
       "Capitulo": "13",
-      "Nombre": "µ's Music Start!"
+      "Nombre": "µ's Music Start!",
+      "Fecha": "2013-03-31"
     },
     {
       "Capitulo": "OVA",
-      "Nombre": "Love Live! School idol project OVA"
+      "Nombre": "Love Live! School idol project OVA",
+      "Fecha": "2013-11-27"
     }
   ]
 }

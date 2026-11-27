@@ -2,14 +2,18 @@
     "sections":[
         {
             "Capitulo": "1",
-            "Nombre": "¡¡Quiero brillar!!"},
+            "Nombre": "¡¡Quiero brillar!!", 
+            "Fecha": "2016-07-02"},
         {
             "Capitulo": "2",
-            "Nombre": "¡Atrapen a la estudiante transferida!"},
+            "Nombre": "¡Atrapen a la estudiante transferida!",
+            "Fecha": "2016-07-09"},
         {
             "Capitulo": "3",
-            "Nombre": "Primer paso"},
+            "Nombre": "Primer paso",
+            "Fecha": "2016-07-16"},
         {
             "Capitulo": "4",
-            "Nombre": "Sentimiento de dos personas"}
+            "Nombre": "Sentimiento de dos personas",
+            "Fecha": "2016-07-23"}
     ]}

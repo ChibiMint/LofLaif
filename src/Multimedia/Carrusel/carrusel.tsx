@@ -12,7 +12,8 @@ const tipoCategoria: Record<string, Kind[]> = {
   Anime: ['anime'],
   Musica: ['canciones', 'album'],
   Conciertos: ['conciertos'],
-  libros: ['libros'],
+  Libros: ['libros'],
+  Revistas: ['revistas'],
 }
 
 type objetoCarrusel = Objeto & {
@@ -78,7 +79,8 @@ function construirVistaCapitulos(): objetoCarrusel[] {
     if (
       objeto.kind === 'canciones' ||
       objeto.kind === 'album' ||
-      objeto.kind === 'conciertos'
+      objeto.kind === 'conciertos'||
+      objeto.kind === 'libros' 
     ) {
       resultado.push({
         ...objeto,
@@ -93,16 +95,17 @@ function construirVistaCapitulos(): objetoCarrusel[] {
     if (!caps) return
 
     caps.forEach((capitulo) => {
+      const numero = capitulo.Capitulo ?? capitulo.Edicion ?? capitulo.Nombre
       resultado.push({
-        id: `cap-${objeto.id}-${capitulo.Capitulo}`,
+        id: `cap-${objeto.id}-${numero}`,
         kind: objeto.kind,
-        nombre: capitulo.Nombre || `Capítulo ${capitulo.Capitulo}`,
+        nombre: capitulo.Nombre || `Capítulo ${numero}`,
         grupo: objeto.grupo,
         imagen: capitulo.Imagen || objeto.imagen,
         fecha: capitulo.Fecha,
         href: `/multimedia/objeto/${encodeURIComponent(
           objeto.id,
-        )}/cap/${encodeURIComponent(String(capitulo.Capitulo))}`,
+        )}/cap/${encodeURIComponent(String(numero))}`,
       })
     })
   })

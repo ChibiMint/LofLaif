@@ -3,42 +3,41 @@
         {
             "Nombre": "Bokura no LIVE Kimi to no LIFE",
             "Grupo": "μ's",
-            "SubUnit": "",
-            "Artist":"",
             "Imagen": "https://i.schoolido.lu/songs/%E5%83%95%E3%82%89%E3%81%AELIVE_%E5%90%9B%E3%81%A8%E3%81%AELIFE.jpg",
-            "Fecha": "2014-06-24"
+            "Fecha": "2010-08-25"
         },
         {
            "Nombre": "START:DASH!!",
             "Grupo": "μ's",
-            "SubUnit": "",
-            "Artist":"",
             "Imagen": "https://i.schoolido.lu/songs/STARTDASH.jpg",
-            "Fecha": "2014-06-14"
+            "Fecha": "2013-02-20"
         },
         {
             "Nombre": "Deep Resonance",
             "Grupo": "Aquors",
-            "SubUnit": "",
-            "Artist":"",
-            "Imagen": "https://i.schoolido.lu/songs/zDXXe654NOeSHuXymGoCB9dTeqPfmSwX.png"},
+            "Imagen": "https://i.schoolido.lu/songs/zDXXe654NOeSHuXymGoCB9dTeqPfmSwX.png",
+            "Fecha": "2019-09-25"
+        },
         {
             "Nombre": "Strawberry Trapper",
             "Grupo": "Aquors",
             "SubUnit": "Guilty Kiss",
-            "Artist":"",
-            "Imagen": "https://i.schoolido.lu/songs/Strawberry_Trapper.jpg"},
+            "Imagen": "https://i.schoolido.lu/songs/Strawberry_Trapper.jpg",
+            "Fecha": "2016-06-08"
+        },
         {
             "Nombre": "NO EXIT ORION",
             "Grupo": "μ's",
             "SubUnit": "Printemps",
-            "Artist":"",
-            "Imagen": "https://i.schoolido.lu/songs/xe53mCW.png"},
+            "Imagen": "https://i.schoolido.lu/songs/xe53mCW.png",
+            "Fecha": "2015-11-25"
+        },
         {
             "Nombre": "Storm in Lover",
             "Grupo": "μ's",
-            "SubUnit": "",
             "Artist":"Eli Ayase, Umi Sonoda",
-            "Imagen": "https://i.schoolido.lu/songs/Storm_in_Lover.jpg"}
+            "Imagen": "https://i.schoolido.lu/songs/Storm_in_Lover.jpg",
+            "Fecha": "2014-09-24"
+        }
     ]
 }

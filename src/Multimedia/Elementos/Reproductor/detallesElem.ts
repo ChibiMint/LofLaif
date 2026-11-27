@@ -8,11 +8,14 @@ import CapitulosSunshineMirror from '../../DatosM/Capitulos/Cap_STM.json'
 import CapitulosNijiyon from '../../DatosM/Capitulos/Cap_Nijigasaki1.json'
 import CapitulosLibroSchoolIdolDiary from '../../DatosM/Capitulos/Cap_SID.json'
 import CapitulosLibroManga from '../../DatosM/Capitulos/Cap_Manga.json'
-import CapitulosLibroDays from '../../DatosM/Capitulos/LLD.json'
+import EdicionRevistaDays from '../../DatosM/Capitulos/LoveLiveDays.json'
+import EdicionRevistaDengeki from '../../DatosM/Capitulos/DengekiGM.json'
+import EdicionRevistaEsp from '../../DatosM/Capitulos/Rev_Esp.json'
 
 
 export type CapituloRow = {
-  Capitulo: string
+  Capitulo?: string
+  Edicion?: string
   Nombre: string
   Jap?: string
   Romangi?: string
@@ -35,14 +38,20 @@ const CHAPTERS_BY_TITLE: Record<string, CapituloRow[]> = {
   'Love live! Nijiyon': CapitulosNijiyon.sections,
   'Love Live! School idol diary': CapitulosLibroSchoolIdolDiary.sections,
   'Love Live! Manga': CapitulosLibroManga.sections,
-  'Love Live! Days': CapitulosLibroDays.sections
+  'Love Live! Days': EdicionRevistaDays.sections,
+  'Dengeki Gs Magazine': EdicionRevistaDengeki.sections,
+  'HISTORY OF LoveLive!': EdicionRevistaEsp.sections
 }
 
 
 export function obtenerCapsPorObjeto(
   objeto: Objeto
 ): CapituloRow[] | null {
-  if (objeto.kind !== 'anime' && objeto.kind !== 'libros') {
+  if (
+    objeto.kind !== 'anime' &&
+    objeto.kind !== 'libros' &&
+    objeto.kind !== 'revistas'
+  ) {
     return null
   }
 
@@ -67,7 +76,7 @@ export function obtenerCapsPorNumero(
 
 
   return chapters.find(
-    (chapter) =>
-      String(chapter.Capitulo) === String(chapterNumber)
-  )
+  (chapter) =>
+    String(chapter.Capitulo ?? chapter.Edicion ?? chapter.Nombre) === chapterNumber
+)
 }
