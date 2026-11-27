@@ -1,0 +1,76 @@
+.boton-barra {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: clamp(8px, 2vw, 20px);
+
+  padding:
+    10px
+    max(10px, env(safe-area-inset-left, 0px))
+    calc(10px + env(safe-area-inset-bottom, 0px))
+    max(10px, env(safe-area-inset-right, 0px));
+
+  box-sizing: border-box;
+
+  z-index: 30;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 0 1 auto;
+
+  min-width: 0;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.nav-btn:hover {
+  filter: grayscale(5);
+  transform: scale(1.08);
+}
+
+@media (max-width: 900px) {
+  .bottom-bar {
+    gap: clamp(6px, 2vw, 14px);
+
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .bottom-bar {
+    gap: 6px;
+
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .nav-btn:hover {
+    transform: none;
+  }
+}
+@media (max-width: 380px) {
+  .bottom-bar {
+    gap: 3px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}

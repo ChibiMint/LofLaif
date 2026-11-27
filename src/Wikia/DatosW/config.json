@@ -1,0 +1,41 @@
+{
+  "grupos": [
+    {
+      "grupo": "μ's",
+      "etiqueta": "μ's",
+      "orden": 1,
+      "personajes": [
+        "Kotori Minami",
+        "Sonoda Umi",
+        "Toujou Nozomi"
+      ]
+    }
+  ],
+  "despliegue": {
+    "orden": [
+      "nombre",
+      "nombreJap",
+      "descripcion",
+      "escuela",
+      "grupo",
+      "subgrupo",
+      "año",
+      "edad",
+      "cumpleaños",
+      "sangre",
+      "altura",
+      "comida_favorita",
+      "comida_odiada",
+      "pasatiempos"
+    ],
+    "ocultar": [
+      "website_url",
+      "wiki_url",
+      "wikia_url"
+    ]
+  },
+  "clasificacion": {
+    "modo": "alphabetic",
+    "nolistados": false
+  }
+}

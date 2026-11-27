@@ -1,0 +1,454 @@
+.carrusel {
+  width: 100%;
+  max-width: 1700px;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+.embla {
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+
+  width: 100%;
+  max-width: 1600px;
+  padding-block: 55px;
+
+  box-sizing: border-box;
+}
+
+.emblaContenedor {
+  display: flex;
+  align-items: center;
+
+  margin-left: calc(var(--slide-spacing, 8px) * -1);
+}
+
+.emplaDeslisar {
+  position: relative;
+
+  flex: 0 0 20%;
+
+  min-width: 0;
+
+  padding-left: var(--slide-spacing, 8px);
+
+  box-sizing: border-box;
+}
+
+.emplaDeslisar--solo {
+  flex: 0 0 100%;
+}
+
+
+.emplaDeslisar-interno {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  transform-origin: center center;
+
+  transition:
+    transform 0.28s ease-out;
+}
+
+
+.emplaDeslisar--center {
+  z-index: 4;
+}
+
+.emplaDeslisar--center .emplaDeslisar-interno {
+  transform: scale(1.20);
+}
+
+.emplaDeslisar--adj {
+  z-index: 2;
+}
+
+.emplaDeslisar--adj .emplaDeslisar-interno {
+  transform: scale(0.92);
+}
+
+.emplaDeslisar--edge {
+  z-index: 1;
+}
+
+.emplaDeslisar--edge2 {
+  z-index: 0;
+}
+
+.emplaDeslisar--edge .emplaDeslisar-interno,
+.emplaDeslisar--edge2 .emplaDeslisar-interno {
+  transform: scale(0.78);
+}
+
+
+.carrusel-carta {
+  display: block;
+}
+
+
+
+.carrusel-cartaImagen {
+  display: block;
+
+  width: clamp(320px, 32vw, 350px);
+
+  height: auto;
+
+  padding: 10px;
+
+  max-width: none;
+
+  box-sizing: border-box;
+
+  user-select: none;
+}
+
+
+.carrusel-carta--link {
+  text-decoration: none;
+  color: inherit;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.carrusel-carta--link:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+
+.contenedor {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 0 20px;
+
+  margin: 10px 0;
+
+  box-sizing: border-box;
+
+  gap: 10px;
+}
+
+
+.botonS {
+  width: clamp(65px, 6vw, 110px);
+
+  height: auto;
+
+  flex: 0 0 auto;
+
+  cursor: pointer;
+
+  transition:
+    filter 0.15s ease,
+    transform 0.15s ease;
+}
+
+.botonS:hover {
+  filter: brightness(1.5);
+
+  transform: scale(1.08);
+}
+
+
+.informacion {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  min-width: 100px;
+  background-color: #f978a383;
+
+  padding: 0 30px;
+
+  border: 2px solid white;
+  border-radius: 150px;
+
+  min-height: 90px;
+
+  margin: 20px;
+
+  box-sizing: border-box;
+
+  color: white;
+
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: clamp(24px, 3vw, 40px);
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.informacion p {
+  margin: 0;
+
+  line-height: 1.1;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+@media (max-width: 900px) {
+
+  .carrusel {
+    max-width: 100%;
+  }
+
+  .embla {
+    max-width: 100%;
+
+    padding-block: 40px;
+  }
+
+  .carrusel-cartaImagen {
+    width: clamp(280px, 48vw, 420px);
+  }
+
+  .botonS {
+    width: 70px;
+  }
+
+  .informacion {
+    min-height: 75px;
+
+    margin: 15px;
+
+    padding: 0 20px;
+
+    font-size: clamp(22px, 4vw, 32px);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .carrusel {
+    width: 100%;
+  }
+
+  .contenedor {
+    padding: 0 5px;
+
+    gap: 2px;
+  }
+
+  .embla {
+    width: 100%;
+
+    padding-block: 30px;
+  }
+
+  .carrusel-cartaImagen {
+    width: clamp(220px, 70vw, 33px);
+
+    padding: 6px;
+  }
+
+  .botonS {
+    width: clamp(42px, 12vw, 60px);
+  }
+
+
+  .emplaDeslisar--center .emplaDeslisar-interno {
+    transform: scale(1.10);
+  }
+
+  .emplaDeslisar--adj .emplaDeslisar-interno {
+    transform: scale(0.82);
+  }
+
+  .emplaDeslisar--edge .emplaDeslisar-interno,
+  .emplaDeslisar--edge2 .emplaDeslisar-interno {
+    transform: scale(0.68);
+  }
+
+  .informacion {
+    width: calc(100% - 20px);
+
+    min-height: 65px;
+
+    margin: 10px;
+
+    padding: 8px 18px;
+
+    border-radius: 100px;
+
+    font-size: clamp(18px, 5vw, 26px);
+  }
+
+  .informacion p {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 380px) {
+
+  .contenedor {
+    padding: 0 2px;
+  }
+
+  .embla {
+    padding-block: 25px;
+  }
+
+  .carrusel-cartaImagen {
+    width: 235px;
+  }
+
+  .botonS {
+    width: 40px;
+  }
+
+  .emplaDeslisar--center .emplaDeslisar-interno {
+    transform: scale(1.05);
+  }
+
+  .informacion {
+    min-height: 58px;
+
+    margin: 8px;
+
+    padding: 6px 12px;
+
+    font-size: 17px;
+  }
+}
+
+
+.swipe__view-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+
+.swipe__toggle-button {
+  padding: 10px 24px;
+  border: 2px solid #f978a3;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.swipe__toggle-button:hover {
+  transform: translateY(-2px);
+}
+
+.swipe__toggle-button.active {
+  background-color: #f978a3;
+  color: white;
+}
+
+.swipe__toggle-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.carrusel-card__no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(220px, 32vw, 350px);
+  min-height: 180px;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #f978a3;
+  border-radius: 12px;
+  color: inherit;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .swipe__view-toggle {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .swipe__toggle-button {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
+
+.swipe__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+
+.swipe__group-button {
+  padding: 9px 24px;
+  border: 2px solid #f978a3;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.swipe__group-button:hover {
+  background: #f978a3;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.swipe__group-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .swipe__toolbar {
+    padding: 6px 10px;
+  }
+
+  .swipe__group-button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}

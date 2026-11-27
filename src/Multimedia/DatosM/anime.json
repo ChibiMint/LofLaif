@@ -1,0 +1,39 @@
+{
+    "sections":[
+        {
+            "Nombre": "Love live! the school idol project!",
+            "Grupo": "μ's",
+            "Imagen":"https://m.media-amazon.com/images/M/MV5BMjM2MTc1MDU1MV5BMl5BanBnXkFtZTgwMjYxNzEwODE@._V1_.jpg",
+            "Fecha": "2014-06-24"},
+        {
+            "Nombre": "Love live! the school idol project 2!!",
+            "Grupo": "μ's",
+            "Imagen":"https://icrvb3jy.xinmedia.com/solomo/article/D/3/D/D3D837B4-CD35-9F84-69E9-D7F16D803928.jpg",
+            "Fecha": "2014-06-14"},
+        {
+          "Nombre": "Love live! Sunshine!!",
+            "Grupo": "Aquors",
+            "Imagen":"https://Imagens.justwatch.com/poster/253937608/s718/love-live-sunshine.jpg",
+            "Fecha": "2014-06-16"},
+        {
+           "Nombre": "Love live! Nijigasaki High School Idol Club",
+            "Grupo": "Nijigasaki",
+            "Imagen":"https://imgsrv.crunchyroll.com/cdn-cgi/Imagen/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/e48baf35cb5ae569639980e9c9698b43.jpg",
+            "Fecha": "2014-06-7"},
+        {
+            "Nombre": "Love live! Superstar!!",
+            "Grupo": "Liella",
+            "Imagen":"https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/13b871ba35288b6a2722ae26b01e7447.jpg",
+            "Fecha": "2014-06-5"},
+        {
+            "Nombre": "Sunshine in the mirror",
+            "Grupo": "Aquors",
+            "Imagen":"https://m.media-amazon.com/Imagens/M/MV5BMzk2NjBmOTctNWY0OS00OTU4LWIxYWUtYjRiZGMzYzhlNjExXkEyXkFqcGc@._V1_.jpg",
+            "Fecha": "2014-06-1"},
+        {
+            "Nombre": "Love live! Nijiyon",
+            "Grupo": "nijigasaki",
+            "Imagen":"https://a.storyblok.com/f/178900/960x1359/54c5145cdd/nijiyon-animation-second-season-key-visual.png/m/filters:quality(95)format(webp)",
+            "Fecha": "2014-06-2"}
+    ]
+}
